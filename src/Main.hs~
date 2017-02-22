@@ -1,7 +1,0 @@
-
-
-module Main where
-
-import TAPF.TwoPlayers
-
-main = playTwo

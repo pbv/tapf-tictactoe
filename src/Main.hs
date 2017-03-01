@@ -2,7 +2,7 @@
 
 module Main where
 
-import TAPF.TwoPlayers
+import TAPF.GameLoop
 
 main :: IO ()
-main = playTwo
+main = play2

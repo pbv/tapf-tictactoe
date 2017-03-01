@@ -1,14 +1,14 @@
 {-
-  Main loop to play Tic-Tac-Toe with two human players
+  Game loop to play Tic-Tac-Toe with two human players
 -}
-module TAPF.TwoPlayers (playTwo) where
+module TAPF.GameLoop (play2) where
 
 import           TAPF.TicTacToe
 import qualified Data.Map as Map
 
 -- | start 2-player game
-playTwo :: IO ()
-playTwo = do
+play2 :: IO ()
+play2 = do
   endgame <- playLoop (start X)
   printBoard (board endgame)
   print (state endgame)

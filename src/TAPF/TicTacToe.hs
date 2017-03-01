@@ -1,5 +1,5 @@
-{-
-  Game positions and moves for Tic-Tac-Toe.
+{-|
+  Game representation and moves for Tic-Tac-Toe.
   Pedro Vasconcelos, 2016
 -}
 module TAPF.TicTacToe where

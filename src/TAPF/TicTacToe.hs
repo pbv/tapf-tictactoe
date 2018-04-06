@@ -93,7 +93,7 @@ makeMove coord position
 -- | helper function; advance to next state
 nextState :: Player -> Board -> State
 nextState player board
-  | Just player' <- winner board = Winner player
+  | Just player' <- winner board = Winner player' -- must hold: player' == player 
   | null (freeCoordinates board) = Draw
   | otherwise                    = Playing (switch player)
 

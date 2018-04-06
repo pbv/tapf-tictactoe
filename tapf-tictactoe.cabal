@@ -1,5 +1,5 @@
 name:                tapf-tictactoe
-version:             0.1.0.0
+version:             0.2.0.0
 synopsis:            A Simple Tic-Tac-Toe game engine
 homepage:            https://github.com/pbv/tapf-tictactoe.git
 license:             MIT
@@ -17,6 +17,8 @@ executable tapf-tictactoe
   main-is:             Main.hs
   other-modules:       TAPF.TicTacToe
                        TAPF.GameLoop
+                       TAPF.Minimax
+                       TAPF.AI
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5,
                        containers
